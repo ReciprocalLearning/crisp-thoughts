@@ -11,7 +11,7 @@ Restrictions may be due to subscription limits, regional capacity, or SKU availa
 
 ![image](Images/thoughts-az.png)
 
-![image](Images/Deployment-worklfow.png)
+![image](Images/Deployment-Worklfow.png)
 
 ## 1. Check Region Support for Availability Zones
 
