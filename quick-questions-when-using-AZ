@@ -1,0 +1,35 @@
+# Thoughts When Dealing with Regions, Availability Zones, and Supported Services or Resources
+
+This document outlines a practical workflow for determining Azure region capabilities, availability zone support, and resource deployment options.
+
+## 1. Check Region Support for Availability Zones
+
+- Use the official Azure documentation to verify if a region supports availability zones.
+- Reference: https://learn.microsoft.com/en-us/azure/reliability/regions-list
+
+## 2. Identify Product Support by Region
+
+- Use the product availability table to determine which services are supported in a specific region.
+- Reference: [Products by Region Table](https://azure.microsoftnfrastructure/products-by-region/table
+
+## 3. Determine Resource Deployment Across Zones
+
+Ask:
+- Can this service be deployed in multiple availability zones?
+- Is it available in all zones?
+- Does it only support regional deployment?
+
+Possible answers:
+- Service can be deployed in 2 availability zones.
+- Service is available in all zones.
+- Service only supports regional deployment (for now).
+
+> **Note:** Availability zone support is rolled out gradually for services.
+
+## 4. Confirm SKU Availability Using Azure CLI
+
+Use these commands to check SKU availability and restrictions:
+
+**List SKUs with restrictions:**
+
+az vm list-skus --location centralus --resource-type virtualMachines --output table --query "[?family=='standardDPSv5Family'].[name,family,tier,size,restrictions]"
