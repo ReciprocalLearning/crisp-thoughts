@@ -9,7 +9,9 @@ This document presents a structured approach for evaluating Azure region capabil
 
 Restrictions may be due to subscription limits, regional capacity, or SKU availability.
 
-!\[Network Diagram\] (./Images/thoughts-az.png)
+![image](Images/thoughts-az.png)
+
+![image](Images/Deployment-worklfow.png)
 
 ## 1. Check Region Support for Availability Zones
 
