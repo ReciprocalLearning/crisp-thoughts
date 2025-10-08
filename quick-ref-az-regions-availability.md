@@ -1,8 +1,8 @@
-# Thoughts When Dealing with Regions, Availability Zones, and Supported Services or Resources
+# Thoughts When Dealing with Regions, Availability Zones, and Supported Services or Resources.
 
 
 > 💡 **Note**
-This document presents a structured approach for evaluating Azure region capabilities, availability zone support, and resource deployment strategies. The intent is to leverage real-world events—such as use case, issues, queries, troubleshooting scenarios, limitations etc—to accelerate learning and deepen understanding of various Azure constructs.
+This document presents a structured approach for troubleshooting resource deployment failures against Azure regions, Availability Zones. The intent is to leverage real-world events—such as use case, issues, queries, troubleshooting scenarios, limitations etc—to promote swift learning and understanding of various Azure constructs. This is not comprehensive document covering entire workflow.For completeness, please refer to official Microsoft documentation.
 
 
 ### Scenario:  I am getting error - “AvailabilityZoneNotSupported” or "SkuNotAvailable" or "InvalidTemplateDeployment" when provisioning Azure resource. How to troubleshoot this error?
