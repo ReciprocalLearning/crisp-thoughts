@@ -5,9 +5,9 @@
 This document presents a structured approach for evaluating Azure region capabilities, availability zone support, and resource deployment strategies. The intent is to leverage real-world events—such as use case, issues, queries, troubleshooting scenarios, limitations etc—to accelerate learning and deepen understanding of various Azure constructs.
 
 
-### Scenario:  I am getting error - “AvailabilityZoneNotSupported” when provisioning Azure resource. How to think about this error?
+### Scenario:  I am getting error - “AvailabilityZoneNotSupported” or "SkuNotAvailable" or "InvalidTemplateDeployment" when provisioning Azure resource. How to troubleshoot this error?
 
-Restrictions may be due to subscription limits, regional capacity, or SKU availability.
+Possible Cause : Restrictions may be due to subscription limits, regional capacity, or SKU availability.
 
 ![image](Images/thoughts-az.png)
 
@@ -34,18 +34,22 @@ Ask Yourself:
 Possible answers:
 
 * Service can be deployed in 1 or 2 availability zones.
-* Service is available in all zones.
+* Service can be deployed in all zones.
 * Service only supports regional deployment (for now).
 
-> **Note:** Availability zone support is rolled out gradually for services.
+> **Note:** Availability zone support is gradually rolled out for services.
 
 ## 4. Confirm SKU Availability Using Azure CLI
 
-Use these commands to check SKU availability and restrictions:
+Sometimes SKU's are not available in all zones simultaneously. Use these commands to check SKU availability and restrictions:
 
 **List SKUs with restrictions:**
 
-az vm list-skus --location centralus --resource-type virtualMachines --output table --query "\[?family=='standardDPSv5Family'\].\[name,family,tier,size,restrictions\]"
+`az vm list-skus --location centralus --resource-type virtualMachines --output table --query "\[?family=='standardDPSv5Family'\].\[name,family,tier,size,restrictions\]"`
+
+ or 
+ 
+`az vm list-skus --location centralus --output json --query "[?name=='Standard_D8ps_v5'].restrictions"`
 
 ```
 {
@@ -71,15 +75,15 @@ Read the above info like this -
 
 `["centralus"]` → Reiterates the affected region.
 
-```
-az vm list-skus --location centralus --output json --query "[?name=='Standard_D8ps_v5'].restrictions"
-```
+## Another method -
 
+You can view all the compute resources for a location's availability zones. By default, only SKUs without restrictions are displayed. To include SKUs with restrictions, use the --all parameter.
 
+`az vm list-skus --location centralus --resource-type virtualMachine  --Name Standard_D8ps_v5 --zone --all --output table`
 
 ## 5. **If SKU Not Available**
 
 * Submit a request to Azure Support.
-* Reference:  !\[Alt Text\] (https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-sku-not-available?tabs=azure-cli)
+* Reference:  ![Resolve errors for SKU not available](https://learn.microsoft.com/en-us/azure/azure-resource-manager/troubleshooting/error-sku-not-available?tabs=azure-cli)
 
 
