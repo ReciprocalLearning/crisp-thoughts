@@ -1,1 +1,4 @@
 Disclaimer: The views and opinions expressed in blog posts on this website are solely those of the individual authors and do not necessarily reflect the official policy or position of any organization. The organization is not responsible for any errors or omissions in the content of the blog posts or for any damages or losses that may arise from reliance on the information contained in them. The organization does not endorse or guarantee the accuracy, completeness, or usefulness of any information presented in the blog posts, nor does it warrant the validity of any advice, opinion, or statement provided therein. Readers are advised to independently verify any information presented in the blog posts and to seek professional advice before acting on any information contained in them.
+
+
+![Image](https://github.com/ReciprocalLearning/crisp-thoughts/blob/main/Images/MylogoB.png)
