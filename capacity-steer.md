@@ -77,7 +77,7 @@ On the other hand, If these issues continue, the consequences grow only more sev
 * Legacy dependencies drain agility and amplify market risk
 
 ## Envisioning Tomorrow: The Target State
-![Diagram](../Images/capacity2.png)
+![Diagram](https://github.com/ReciprocalLearning/crisp-thoughts/blob/main/Images/capacity2.png)
 
 **Characteristics of Modernized Infrastructure**
 * **Flexible Scaling**: Decoupling services from specific hardware limits to allow for rapid expansion.
@@ -87,5 +87,6 @@ On the other hand, If these issues continue, the consequences grow only more sev
 * **Global Availability**: Leveraging a distributed model to outreach beyond a single constrained DC and benefit a wider community.
 
 ## The Bottom Line
+
 
 ### Adaptive workloads win bigger markets !
