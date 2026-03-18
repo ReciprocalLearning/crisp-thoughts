@@ -85,8 +85,8 @@ Don't wait for the April deadlines. Use this month to:
 3.  **Plan the Jump:** Azure Front Door (Classic) is retiring in 2027. Moving to **Standard/Premium** now solves many of these certificate headaches automatically.
     Review the Official Microsoft Migration Documentation to begin moving your profiles to the Standard/Premium tier.
     
-    ![Migration process overview](https://learn.microsoft.com/en-us/azure/frontdoor/tier-migration)
+    [Migration process overview](https://learn.microsoft.com/en-us/azure/frontdoor/tier-migration)
     
-    ![Using Azure Portal - Migrate Azure Front Door (classic) to Standard or Premium tier](https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier)
+    [Using Azure Portal - Migrate Azure Front Door (classic) to Standard or Premium tier](https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier)
 
 ---
