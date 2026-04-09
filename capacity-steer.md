@@ -41,7 +41,7 @@ We’ve all seen it happen. A business starts doing great, orders are flying in,
 
 This is a classic problem. It’s the moment where **big dreams meet real-world limits.**
 
-Start thinking differently -
+Start thinking differently -  Most Importantly, Bring Capacity planning Early in your Design & Deployment Plans..
 
 * Can I  make my product work on other SKU’s?
 * Can I trade few decimals of SLA’s for avaliablility?
