@@ -5,17 +5,17 @@ Author: Manish Vyas
 
 I have had the privilege of being associated with cloud computing since its early days, watching public cloud providers grow, mature, and evolve over time. I have seen the transition from simple virtualized hosting to massive, global multi-cloud ecosystems.
 
-Throughout this evolution, we have all been sold a beautiful, comforting lie: **that the cloud is infinite**.
+The industry has often operated under the assumption that cloud capacity is effectively limitless.
 
-For a long time, that lie felt close enough to the truth. But like any other physical supply chain, cloud providers are not exempt from hardware bottlenecks, resource constraints, and physical limitations. Over the past couple of years, datacenters globally have run headfirst into massive capacity walls as providers struggle to build out physical space in proportion to staggering enterprise demands.
+Like any other physical supply chain, cloud providers are not exempt from hardware bottlenecks, resource constraints, and physical limitations. Over the past couple of years, datacenters globally have run headfirst into massive capacity walls as providers struggle to build out physical space in proportion to staggering enterprise demands.
 
-This capacity crunch has only intensified with the massive wave of AI adoption. Hyperscale focus has unevenly shifted toward supporting AI-driven markets, diverting hardware and energy resources, all while trying to address existing capacity constraints in standard compute. New datacenters are constantly in the making, but physical supply chains move much slower than digital demands.
+This capacity crunch has only intensified with the massive wave of AI adoption. The rapid growth of AI workloads has introduced new capacity planning challenges across the industry. New datacenters are constantly in the making, but physical supply chains move much slower than digital demands.
 
 ---
 
 ## The Illusion of the Click-to-Scale Button
 
-We are taught to believe that as long as our credit card is valid, we can scale to thousands of cores at the click of a button. But anyone running enterprise-scale workloads in public clouds knows the harsh reality. Between localized hardware shortages, physical datacenter power limits, and massive regional demand spikes, "infinite scale" frequently hits a wall known as the allocation failure.
+We are taught to believe that as long as our credit card is valid, we can scale to thousands of cores at the click of a button. But anyone running enterprise-scale workloads in public clouds knows the reality. Between localized hardware shortages, physical datacenter power limits, and massive regional demand spikes, "infinite scale" occasionally hits a wall known as the allocation failure.
 
 Most cloud professionals are intimately familiar with these frustrating errors: `SkuNotAvailable` or `QuotaNotAvailable`.
 
